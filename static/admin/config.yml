@@ -1,16 +1,19 @@
 backend:
-  name: test-repo
+  name: git-gateway
+  branch: master
 
 media_folder: static/assets
 public_folder: assets
 
 collections:
-  - name: blog
-    label: Blog
-    folder: blog
-    create: true
-    fields:
-      - { name: path, label: Path }
-      - { name: date, label: Date, widget: date }
-      - { name: title, label: Title }
-      - { name: body, label: Body, widget: markdown }
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "src/files/text.md"
+        label: "page-two"
+        name: "page-two"
+        fields:
+          - {label: "path", name: "path"}
+          - {label: "title", name: "title", widget: "string"}
+          - {label: "date", name : "date", widget: "date"}
+          

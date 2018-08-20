@@ -12,8 +12,7 @@ collections:
       - file: "src/files/text.md"
         label: "page-two"
         name: "page-two"
-        fields:
-          - {label: "path", name: "path"}
+        fields:  
           - {label: "title", name: "title", widget: "string"}
           - {label: "date", name : "date", widget: "date"}
           

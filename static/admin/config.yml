@@ -8,11 +8,10 @@ public_folder: assets
 collections:
   - name: "pages"
     label: "Pages"
-    files:
-      - file: "src/files/text.md"
-        label: "page-two"
-        name: "page-two"
-        fields:  
+    folder: testfolder
+    create: true
+    fields:  
           - {label: "title", name: "title", widget: "string"}
           - {label: "date", name : "date", widget: "date"}
+        
           

@@ -6,8 +6,8 @@ media_folder: static/assets
 public_folder: assets
 
 collections:
-  - name: "pages"
-    label: "Pages"
+  - name: "testfolder"
+    label: "Test"
     folder: testfolder
     create: true
     fields:  

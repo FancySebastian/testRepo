@@ -13,11 +13,11 @@ collections:
       - file: "src/pages/files/text.md"
         label: "Test"
         name: "Test"
-        fields:  
+        fields: 
           - {label: "date", name : "date", widget: "date"}
           - {label: "title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
-         
+          
 
         
           

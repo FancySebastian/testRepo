@@ -6,12 +6,17 @@ media_folder: static/assets
 public_folder: assets
 
 collections:
-  - name: "testfolder"
-    label: "Test"
-    folder: testfolder
+  - name: "testFolder"
+    label: "testFolder"
     create: true
-    fields:  
-          - {label: "title", name: "title", widget: "string"}
+    files:
+      - file: "src/pages/files/text.md"
+        label: "Test"
+        name: "Test"
+         fields:  
           - {label: "date", name : "date", widget: "date"}
+          - {label: "title", name: "title", widget: "string"}
+         
+
         
           

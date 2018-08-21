@@ -10,7 +10,6 @@ collections:
     label: "testFolder"
     create: true
     files:
-      - file: "src/pages/files/text.md"
         label: "Test"
         name: "Test"
         fields: 

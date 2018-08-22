@@ -5,10 +5,11 @@ export default function Template({ data }) {
     const { edges: posts } = data.allMarkdownRemark
     return (
         <div>
-            <h1>This is page 2</h1>
+
             {posts.map(({ node: value }) =>
                 <div>
-                    
+                    <h1>{value.frontmatter.title}</h1>
+                    <p>{value.frontmatter.date}</p>
                     <p>{value.excerpt}</p>
                     <Link to="/">Back</Link>
                 </div>

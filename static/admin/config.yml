@@ -10,8 +10,13 @@ collections:
     label: "test"
     files:
       - file: "src/pages/files/text.md"
-        label: "page2"
-        name: "page2"
+        label: "text"
+        name: "text"
+        fields:
+          - {label: "title", name: "title", widget: "string"}
+      - file: "src/pages/files/index.md"
+        label: "index"
+        name: "index"
         fields:
           - {label: "title", name: "title", widget: "string"}
           

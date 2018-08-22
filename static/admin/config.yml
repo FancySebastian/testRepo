@@ -14,10 +14,13 @@ collections:
         name: "text"
         fields:
           - {label: "title", name: "title", widget: "string"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
       - file: "src/pages/files/index.md"
         label: "index"
         name: "index"
         fields:
           - {label: "title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
           
           

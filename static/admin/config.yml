@@ -8,7 +8,6 @@ public_folder: assets
 collections:
   - name: "test"
     label: "test"
-    create: true
     files:
       - file: "src/pages/files/text.md"
         label: "page2"

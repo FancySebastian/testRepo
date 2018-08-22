@@ -14,5 +14,5 @@ collections:
         name: "page2"
         fields:
           - {label: "title", name: "title", widget: "string"}
-          - {label: "date", name : "date", widget: "date"}
+          
           

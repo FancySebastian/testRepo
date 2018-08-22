@@ -38,10 +38,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
         component: path.resolve(
           `src/templates/sample.js`
         ),
-        // additional data can be passed via context
-        context: {
-          id,
-        },
+       
       })
     })
 

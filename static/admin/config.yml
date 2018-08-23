@@ -9,16 +9,16 @@ collections:
   - name: "test"
     label: "test"
     files:
-      - file: "src/pages/files/text.md"
-        label: "text"
-        name: "text"
+      - file: "src/pages/files/first-post.md"
+        label: "first-post"
+        name: "first-post"
         fields:
           - {label: "title", name: "title", widget: "string"}
-          - {label: "Title", name: "title", widget: "string"}
+          - {label: "date", name: "date", widget: "date"}
           - {label: "Body", name: "body", widget: "markdown"}
-      - file: "src/pages/files/index.md"
-        label: "index"
-        name: "index"
+      - file: "src/pages/files/second-post.md"
+        label: "second-post"
+        name: "second-post"
         fields:
           - {label: "title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}

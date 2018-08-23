@@ -1,25 +1,24 @@
 module.exports = {
-    siteMetadata: {
-      title: 'Gatsby Default Starter',
-    },
-    plugins: [
-      'gatsby-plugin-react-helmet',
-      'gatsby-plugin-netlify-cms',
-      'gatsby-plugin-sass',
-      'gatsby-plugin-stylus',
+  siteMetadata: {
+    title: 'Gatsby Default Starter',
+  },
+  plugins: [
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-netlify-cms',
+    'gatsby-plugin-sass',
+    'gatsby-plugin-stylus',
     {
       resolve: 'gatsby-source-filesystem',
-      options:{
-        path: `${__dirname}/src/pages`,
+      options: {
+        path: `${__dirname}/src/pages/files`,
         name: 'pages',
       }
     },
     {
-    resolve:'gatsby-transformer-remark',
-    options: {
-      plugins: [] 
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: []
+      },
     },
-  },
   ],
-  }
-  
+}

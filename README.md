@@ -1,10 +1,11 @@
-# gatsby-starter-hello-world
-Starter with the bare essentials needed for a [Gatsby](https://www.gatsbyjs.org/) site
+# gatsby netlify test repo
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
-```
-gatsby new gatsby-site https://github.com/gatsbyjs/gatsby-starter-hello-world
-```
+Markup: * Push all your local changes to a repository in git 
 
-## Running in development
-`gatsby develop`
+	* Login to netlify.com and ```New site from Git```
+	
+	* Select ```Github```
+
+	* Select the repo which you want to deploy
+
+

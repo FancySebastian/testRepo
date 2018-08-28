@@ -13,13 +13,19 @@ collections:
         label: "first-post"
         name: "first-post"
         fields:
+          - {label: "key", name: "key", widget: "hidden", default: "first-post"}
+          - {label: "path", name: "path", widget: "hidden", default: "/first-post"}
+          - {label: "image", name: "image", widget: "hidden"}
           - {label: "title", name: "title", widget: "string"}
-          - {label: "date", name: "date", widget: "date"}
+          - {label: "date", name: "date", widget: "datetime"}
           - {label: "Body", name: "body", widget: "markdown"}
       - file: "src/pages/files/second-post.md"
         label: "second-post"
         name: "second-post"
         fields:
+          - {label: "key", name: "key", widget: "hidden", default: "second-post"}
+          - {label: "path", name: "path", widget: "hidden", default: "/second-post"}
+          - {label: "image", name: "image", widget: "hidden"}
           - {label: "title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
           

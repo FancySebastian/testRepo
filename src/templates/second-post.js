@@ -11,7 +11,9 @@ export default function Template({ data }) {
           <h1>{value.frontmatter.title}</h1>
           <div>
             <code>This is second-post.js</code>
-            <p className="content" >{value.excerpt}</p>
+            <div className="img"><img src={value.frontmatter.image} alt="First post image" /></div>
+            <p className="content">{value.excerpt}</p>
+            
           </div>
         </div>
       )}
@@ -41,6 +43,7 @@ export const secondpostQuery = graphql`
           frontmatter {
             key
             path
+            image
             title
             date(formatString: "DD MMMM, YYYY")
           }

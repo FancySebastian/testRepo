@@ -28,11 +28,11 @@ collections:
           - {label: "image", name: "image", widget: "hidden"}
           - {label: "title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
+
   - name: "Blogs"
     label: "Blogs"
     create: true
     folder: "src/pages/blogs"
-    create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
           - {label: "key", name: "key", widget: "hidden"}

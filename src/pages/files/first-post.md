@@ -1,8 +1,8 @@
 ---
 key: first-post
-path : /first-post
-title: 'Forty Years Ago, August 24, 1978 -  45th amendment!'
-image : /assets/post1.jpg
+path: /first-post
+image: /assets/post1.jpg
+title: 'Forty Years Ago, August 24, 1978 -  45 amendment!'
 date: '2018-08-28'
 ---
 

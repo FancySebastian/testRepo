@@ -33,7 +33,7 @@ collections:
     label: "Blogs"
     create: true
     folder: "src/pages/blog"
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{year}}-{{month}}-{{day}}-{{time}}}{{slug}}"
     fields:
           - {label: "key", name: "key", widget: "hidden"}
           - {label: "title", name: "title", widget: "string"}

@@ -32,7 +32,7 @@ collections:
   - name: "Blogs"
     label: "Blogs"
     create: true
-    folder: "src/pages/blogs"
+    folder: "src/pages/blog"
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
           - {label: "key", name: "key", widget: "hidden"}

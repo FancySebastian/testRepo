@@ -6,9 +6,8 @@ media_folder: static/assets
 public_folder: assets
 
 collections:
-  - name: "test"
-    label: "test"
-    create: true
+  - name: "Posts"
+    label: "Posts"    
     files:
       - file: "src/pages/files/first-post.md"
         label: "first-post"
@@ -29,5 +28,17 @@ collections:
           - {label: "image", name: "image", widget: "hidden"}
           - {label: "title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
+  - name: "Blogs"
+    label: "Blogs"
+    create: true
+    folder: "src/pages/blogs"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+          - {label: "key", name: "key", widget: "hidden"}
+          - {label: "title", name: "title", widget: "string"}
+          - {label: "date", name: "date", widget: "datetime"}
+          - {label: "description", name: "description", widget: "text"}
+          - {label: "body", name: "body", widget: "markdown"}
           
           

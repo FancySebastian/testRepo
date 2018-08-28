@@ -42,7 +42,6 @@ export const secondpostQuery = graphql`
             key
             path
             title
-            image
             date(formatString: "DD MMMM, YYYY")
           }
         }

@@ -15,7 +15,7 @@ collections:
         fields:
           - {label: "key", name: "key", widget: "hidden", default: "first-post"}
           - {label: "path", name: "path", widget: "hidden", default: "/first-post"}
-          - {label: "image", name: "image", widget: "hidden"}
+          - {label: "image", name: "image", widget: "hidden", default: "/assets/post1.jpg"}
           - {label: "title", name: "title", widget: "string"}
           - {label: "date", name: "date", widget: "datetime"}
           - {label: "Body", name: "body", widget: "markdown"}

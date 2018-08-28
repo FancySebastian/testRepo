@@ -8,6 +8,7 @@ public_folder: assets
 collections:
   - name: "test"
     label: "test"
+    create: true
     files:
       - file: "src/pages/files/first-post.md"
         label: "first-post"

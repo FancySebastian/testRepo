@@ -34,6 +34,7 @@ export const FirstPostQuery = graphql`
               key
               path
               title
+              image
               date(formatString: "DD MMMM, YYYY")
             }
           }

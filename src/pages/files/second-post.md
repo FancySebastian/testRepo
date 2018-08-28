@@ -1,5 +1,9 @@
 ---
+key: second-post
+path : /second-post
+image : /assets/post1.jpg
 title: Editor's Desk
+date: '2018-08-28'
 ---
 # Fact Fighting
 

@@ -7,15 +7,20 @@ export default function Template({ data }) {
   return (
     <div>
       {posts.map(({ node: value }) =>
-        <div>
-          <h2>This is second-post.js</h2>
+        <div style={{ margin: '2%' }}>
           <h1>{value.frontmatter.title}</h1>
-          <p>{value.excerpt}</p>
-          <Link to="/first-post">Read 1st post</Link>
-          <Link to="/">Back Home</Link>
+          <div>
+            <code>This is second-post.js</code>
+            <p className="content" >{value.excerpt}</p>
+          </div>
         </div>
       )}
+      <div style={{ margin: '2%' }}>
+        <Link to="/first-post">Read first post</Link><br />
+        <Link to="/">Back Home</Link>
+      </div>
     </div>
+
   );
 }
 
@@ -29,7 +34,7 @@ export const secondpostQuery = graphql`
           fields {
             slug
           }
-          excerpt
+          excerpt(pruneLength : 1000000)
           internal {
             type
           }
@@ -37,6 +42,7 @@ export const secondpostQuery = graphql`
             key
             path
             title
+            image
             date(formatString: "DD MMMM, YYYY")
           }
         }

@@ -22,6 +22,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
             key
             path
             title
+            image
             date(formatString: "DD MMMM, YYYY")
           }
         }

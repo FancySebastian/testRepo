@@ -2,20 +2,27 @@ import React from 'react';
 import Link from 'gatsby-link';
 
 export default function Template({ data }) {
-    const { edges: posts } = data.allMarkdownRemark
-    return (
-        <div>
-            {posts.map(({ node: value }) =>
-                <div>
-                    <h2>This is first-post.js</h2>
-                    <h1>{value.frontmatter.title}</h1>
-                    <p>{value.excerpt}</p>
-                    <Link to="/second-post">Read 2nd post</Link>
-                    <Link to="/">Back Home</Link>
-                </div>
-            )}
+  const { edges: posts } = data.allMarkdownRemark
+
+  return (
+    <div>
+      {posts.map(({ node: value }) =>
+        <div style={{ margin: '2%' }}>
+          <h1>{value.frontmatter.title}</h1>
+          <div>
+            <code>This is first-post.js</code>
+            <div className="img" style={{ width: '50%', float: 'left' }}><img src={value.frontmatter.image} alt="First post image" /></div>
+            <p className="content" style={{ width: '50%', float: 'left' }}>{value.excerpt}</p>
+            <div style={{ clear: 'both' }} />
+          </div>
         </div>
-    );
+      )}
+      <div style={{ margin: '2%' }}>
+        <Link to="/second-post">Read 2nd post</Link><br />
+        <Link to="/">Back Home</Link>
+      </div>
+    </div>
+  );
 }
 
 export const FirstPostQuery = graphql`
@@ -28,7 +35,7 @@ export const FirstPostQuery = graphql`
           fields {
             slug
           }
-          excerpt
+          excerpt (pruneLength : 1000000)
           internal {
             type
           }
@@ -36,6 +43,7 @@ export const FirstPostQuery = graphql`
             key
             path
             title
+            image
             date(formatString: "DD MMMM, YYYY")
           }
         }

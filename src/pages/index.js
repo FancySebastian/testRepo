@@ -26,7 +26,7 @@ export const FirstPostQuery = graphql`
             fields {
               slug
             }
-            excerpt
+            excerpt 
             internal {
               type
             }

@@ -2,9 +2,12 @@
 templateKey: first-post
 path: /first-post
 key: first-post
-title: NEW TITLE BY NETLIFY!!
+title: Forty Years Ago, August 24, 1978 -  45th amendment
+image: /assets/post1.jpg
 date: 2018-08-09T00:00:00.000Z
 ---
 ##Details
 
-Asian Games 2018 India Shooting Highlights: Rahi Sarnobat of India won the gold medal for India in 25m pistol shooting event at the Asian Games. The shooter scored a total of 34 and then had to battle it out in two tie-breakers against Thailand’s Naphaswan Yangpaiboon to finally win the gold. Manu Bhaker, who topped the qualifying stage with Asian Games record, finished in the 6th position. It is India’s second gold medal in shooting, and the 7th overall at the Asian Games.
+
+
+The Lok Sabha gave its unanimous approval to the Constitution (Forty- fifth Amendment) Bill amidst thunderous applause from all sides.The historic measure seeks to remove the obnoxious provisions inducted into the Constitution during the Emergency. The bill was passed with the massive support of 355 members and none opposing it. In the words of a smiling law minister, Shanti Bhushan, who piloted the bill, the measure would re-frame the Constitution in such a manner as it would the people to safeguard their rights and pave the way for a more glorious future for them.

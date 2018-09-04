@@ -1,6 +1,8 @@
 ---
-title: 'Artist Bakula Nayak collects vintage ephemera '
-date: '2018-08-29T11:38:44+05:30'
+key: read-more
+path: /read-more
+title: Artist Bakula Nayak collects vintage ephemera 
+date: 2018-08-29T11:38:44+05:30
 description: >-
   In her collection of over 3,000 papers, there are legal documents from
   pre-Independent India, music sheets dating to the 1920s, and old maps of India

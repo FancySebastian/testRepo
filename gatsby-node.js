@@ -7,7 +7,19 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
 
   return graphql(`
   {
-    allMarkdownRemark{
+    allFile(filter: {extension: {eq: "jpg"}, dir: {regex: "/img/"}}) {
+      edges {
+        node {
+          dir
+          publicURL
+          relativePath
+          absolutePath        
+        }
+      }
+      totalCount
+      distinct (field : name )
+    }
+    allMarkdownRemark {
       edges {
         node {
           id
@@ -28,7 +40,8 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
         }
       }
     }
-} 
+  }
+  
   `).then(result => {
       if (result.errors) {
         result.errors.forEach(e => console.error(e.toString()))
@@ -38,6 +51,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
       const posts = result.data.allMarkdownRemark.edges
 
       posts.forEach(edge => {
+        console.log("temp"+edge.node.frontmatter.key);
         const id = edge.node.id
         createPage({
           path: edge.node.frontmatter.path,

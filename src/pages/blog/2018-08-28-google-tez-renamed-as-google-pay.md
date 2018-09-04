@@ -1,4 +1,6 @@
 ---
+key: read-more
+path: /read-more
 title: Google Tez renamed as Google Pay
 date: '2018-08-28T18:16:33+05:30'
 description: App to now offer pre-approved loans

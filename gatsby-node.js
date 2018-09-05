@@ -26,6 +26,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
           fields {
             slug
           }
+          html
           excerpt
           internal {
             type
@@ -78,3 +79,4 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
     })
   }
 }
+

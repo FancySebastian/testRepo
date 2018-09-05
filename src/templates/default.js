@@ -8,8 +8,9 @@ export default function Template({ data }) {
     <div>
       {posts.map(({ node: value }) =>
         <div>
-         
+          <code>default.js</code>
           <h1>{value.frontmatter.title}</h1>
+         
           <p>{value.excerpt}</p>
           
         </div>

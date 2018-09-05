@@ -9,6 +9,6 @@ _Google Tez has been revamped, and its updates were announced at today’s ‘Go
 
 
 
-![G pay](/assets/google-pay-copy.jpg)
+![G pay](/assets/Tez-renamed-to-Google-Pay.jpg)
 
 <https://indianexpress.com/article/technology/social/google-for-india-google-tez-google-pay-pre-approved-loans-5328768/>

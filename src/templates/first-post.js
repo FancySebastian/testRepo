@@ -14,28 +14,27 @@ export default function Template({ data }) {
             value.frontmatter.title &&
             <h1>{value.frontmatter.title}</h1>
           }
-          <div>
+          {/* <div>
 
             <div className="img" style={{ width: '50%', float: 'left' }}>
               <img src={value.frontmatter.image} />
             </div>
             <p className="content" style={{ width: '50%', float: 'left' }}>{value.excerpt}</p>
             <div style={{ clear: 'both' }} />
-          </div>
+          </div> */}
+          
+          <div  dangerouslySetInnerHTML={{ __html: value.html }} />
         </div>
       )}
-
-      {/* {image.map(({ node: value }) =>
-        <div className="img" style={{ width: '50%', float: 'left' }}>
-          <img src={value.allFile.relativePath} />
-        </div>
-      )} */}
 
 
       <div style={{ margin: '2%' }}>
         <Link to="/second-post">Read 2nd post</Link><br />
+        <Link to="/read-more">Read more -></Link><br />
         <Link to="/">Back Home</Link>
       </div>
+
+     
     </div>
   );
 }
@@ -68,6 +67,7 @@ export const FirstPostQuery = graphql`
           fields {
             slug
           }
+          html
           excerpt(pruneLength: 1000000)
           internal {
             type

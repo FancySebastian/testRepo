@@ -10,7 +10,7 @@ export default function Template({ data }) {
         <li><Link to="/first-post">My first post</Link></li>
         <li><Link to="/second-post">Second post</Link></li>
       </ul>
-
+      <button >  <Link  style={{textDecoration: 'none'}} to="/read-more">Read more -></Link><br /></button>
 
     </div>
   );

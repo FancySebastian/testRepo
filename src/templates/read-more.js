@@ -4,16 +4,20 @@ import Link from 'gatsby-link';
 
 export default function Template({ data }) {
   const { edges: posts } = data.allMarkdownRemark
+  const read = {
+    width: '75%',
+    margin : '10%',
+    border: '1px solid #ccc',
+    padding: '2%',
+    textAlign : 'center'
+
+  }
   return (
     <div>
+      <code>Blog posts</code>
       {posts.map(({ node: value }) =>
-        <div>
-         
-          <h1>{value.frontmatter.title}</h1>
-          <p>{value.frontmatter.date}</p>
-          <p>{value.frontmatter.description}</p>
-          <p>{value.excerpt}</p>
-          
+        <div style={read}>
+          <div dangerouslySetInnerHTML={{ __html: value.html }} />
         </div>
       )}
     </div>
@@ -21,26 +25,26 @@ export default function Template({ data }) {
 }
 
 export const defaultQuery = graphql`
-  query readMoreQuery{     
-     
-    allMarkdownRemark (limit :3){
+  query readMoreQuery
+  {
+    allMarkdownRemark(filter: {fields: {slug: {regex: "/blog/"}}}) {
       edges {
         node {
           id
           fields {
             slug
           }
-          excerpt         
+          html
+          excerpt(pruneLength: 10000)
           internal {
             type
           }
           frontmatter {
             title
-            date(formatString: "DD MMMM, YYYY")           
+            date(formatString: "DD MMMM, YYYY")
           }
         }
       }
-    } 
-  
-    }  
-     `;
+    }
+  }
+ `;

@@ -1,25 +1,20 @@
 
 import React from 'react';
 import Link from 'gatsby-link';
+import css from './post.module.styl'
 
 export default function Template({ data }) {
   const { edges: posts } = data.allMarkdownRemark
-  const read = {
-    width: '75%',
-    margin : '10%',
-    border: '1px solid #ccc',
-    padding: '2%',
-    textAlign : 'center'
 
-  }
   return (
     <div>
-      <code>Blog posts</code>
+      <code>Blog posts..</code>
       {posts.map(({ node: value }) =>
-        <div style={read}>
+        <div className={css.readMore_text}>
           <div dangerouslySetInnerHTML={{ __html: value.html }} />
         </div>
       )}
+      <Link className={css.back_btn} to="/">Back Home</Link>
     </div>
   );
 }

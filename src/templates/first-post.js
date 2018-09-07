@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'gatsby-link';
+import css from './post.module.styl'
 
 export default function Template({ data }) {
   const { edges: posts } = data.allMarkdownRemark
@@ -12,26 +13,17 @@ export default function Template({ data }) {
         <div style={{ margin: '2%' }}>
           {
             value.frontmatter.title &&
-            <h1>{value.frontmatter.title}</h1>
+            <h1 className = {css.h1}>{value.frontmatter.title}</h1>
           }
-          {/* <div>
-
-            <div className="img" style={{ width: '50%', float: 'left' }}>
-              <img src={value.frontmatter.image} />
-            </div>
-            <p className="content" style={{ width: '50%', float: 'left' }}>{value.excerpt}</p>
-            <div style={{ clear: 'both' }} />
-          </div> */}
-          
-          <div  dangerouslySetInnerHTML={{ __html: value.html }} />
+          <div className={css.text}  dangerouslySetInnerHTML={{ __html: value.html }} />
         </div>
       )}
 
 
-      <div style={{ margin: '2%' }}>
-        <Link to="/second-post">Read 2nd post</Link><br />
-        <Link to="/read-more">Read more -></Link><br />
-        <Link to="/">Back Home</Link>
+      <div>
+        <Link className={css.second_post_btn} to="/second-post">Read 2nd post</Link><br />
+        <Link className={css.read_more} to="/read-more">Read more &rarr;</Link><br />
+        <Link className={css.back_btn} to="/">Back Home</Link>
       </div>
 
      
